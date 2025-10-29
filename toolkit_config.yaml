@@ -1,0 +1,10 @@
+name: Forge Toolkit
+description: Local file and shell access tools for the Forge build system.
+version: 1.0.0
+tools:
+  - name: Forge File
+    class_name: ForgeFileTool
+    file_path: forge_tools.py
+  - name: Forge Shell
+    class_name: ForgeShellTool
+    file_path: forge_tools.py
