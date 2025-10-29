@@ -1,5 +1,20 @@
 from superagi.tools.base_tool import BaseTool
-import subprocess, os
+
+class ForgeBuilder(BaseTool):
+    name = "ForgeBuilder"
+    description = "Builds Forge project components."
+
+    def _execute(self, **kwargs):
+        # your logic here
+        return "Forge build complete."
+
+class ForgeAnalyzer(BaseTool):
+    name = "ForgeAnalyzer"
+    description = "Analyzes Forge data."
+
+    def _execute(self, **kwargs):
+        return "Forge analysis complete."
+
 
 class ForgeFileTool(BaseTool):
     name = "Forge File"
