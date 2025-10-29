@@ -1,10 +1,14 @@
 name: Forge Toolkit
-description: Local file and shell access tools for the Forge build system.
-version: 1.0.0
+author: Carver
+description: Custom automation tools for the Forge ecosystem.
+version: "1.0.0"
+
 tools:
-  - name: Forge File
-    class_name: ForgeFileTool
-    file_path: forge_tools.py
-  - name: Forge Shell
-    class_name: ForgeShellTool
-    file_path: forge_tools.py
+  - name: ForgeBuilder
+    class_name: ForgeBuilder
+    file_name: forge_tools
+    description: Builds Forge project components.
+  - name: ForgeAnalyzer
+    class_name: ForgeAnalyzer
+    file_name: forge_tools
+    description: Analyzes Forge data and outputs summaries.
